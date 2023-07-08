@@ -1,0 +1,38 @@
+name: 问题提交
+description: 提交一个发现的问题
+labels: kind/bug
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题描述
+      description: |
+        请描述一下具体问题
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 问题发生在第几章第几节
+      description: |
+        提供章节信息，错误信息log, 或者截图
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: 有解决办法么？
+    validations:
+      required: false
+
+
+  - type: textarea
+    id: osVersion
+    attributes:
+      label: 测试用的Mysql版本
+    validations:
+      required: false
+
+
